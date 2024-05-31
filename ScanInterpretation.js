@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path'); 
 const quickSort = require('./class');
-function readFileAndProcess(Location_of_the_folder) {
+function scanInterpretationAndProcess(Location_of_the_folder) {
   const Array_Size = 2047;
   const New_Unique_array = new Array(Array_Size).fill(false);
   const File_Handeler = fs.createReadStream(Location_of_the_folder, { encoding: 'utf8' });
@@ -41,4 +41,4 @@ function readFileAndProcess(Location_of_the_folder) {
   });
 }
 
-module.exports = readFileAndProcess;
+module.exports = scanInterpretationAndProcess;
