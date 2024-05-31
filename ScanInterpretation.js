@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path'); 
 const quickSort = require('./class');
-function readFileAndProcess(Location_Of_my_readed_from_inputs_folder) {
+function readFileAndProcess(Location_of_the_folder) {
   const Array_Size = 2047;
   const New_Unique_array = new Array(Array_Size).fill(false);
-  const File_Handeler = fs.createReadStream(Location_Of_my_readed_from_inputs_folder, { encoding: 'utf8' });
+  const File_Handeler = fs.createReadStream(Location_of_the_folder, { encoding: 'utf8' });
   let Lines_From_File = '';
 
   console.time('Time taken');
